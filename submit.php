@@ -12,6 +12,7 @@ include('php/Parsedown.php');
 include('php/sqlite.php');
 
 $Parsedown = new Parsedown();
+$Parsedown->setSafeMode(true);
 
 function tripcode($tripcode, $salt)
 {
