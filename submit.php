@@ -126,7 +126,6 @@ if (! $allowHidden) {
 	$title = ltrim($title, '.');
 }
 $name = htmlentities($name);
-$tripcode = htmlentities($tripcode);
 
 if (file_exists('posts/' . $title . '.html')){
 	redirectError('A post by that title already exists');
