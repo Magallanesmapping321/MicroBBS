@@ -8,7 +8,7 @@ MIT License
 include('php/settings.php');
 include('php/csrf.php');
 
-function tripcode($tripcode) {
+function tripcode($tripcode, $salt) {
 	if ($tripcode == '')
 	{
 		return '';
@@ -98,7 +98,6 @@ $tripcode = $_POST['tripcode'];
 // html encode user data to prevent xss
 $text = htmlentities($text);
 $name = htmlentities($name);
-$tripcode = htmlentities($tripcode);
 if (strlen($_POST['text']) > 100000 || strlen($_POST['name'] > 20) || strlen($_POST['tripcode']) > 100) {
 	redirectError('Text, name, or tripcode is too long.');
 }
@@ -126,7 +125,7 @@ $child->setAttribute( 'class', 'name');
 
 $parent->appendChild( $child);
 
-$tripcode = tripcode($tripcode);
+$tripcode = tripcode($tripcode, $salt);
 
 if ($tripcode != '')
 {
@@ -134,6 +133,7 @@ if ($tripcode != '')
 	$child->setAttribute( 'class', 'tripcode');
 	$child->setAttribute( 'type', 'text');
 	$child->setAttribute( 'value', $tripcode);
+	$child->setAttribute( 'readonly', 'readonly');
 
 	$parent->appendChild($child);
 }
