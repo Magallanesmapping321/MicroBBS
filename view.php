@@ -17,7 +17,7 @@ $id = $_GET['post'];
 $id = str_replace('/', '', $id);
 $id = str_replace('\\', '', $id);
 
-$id = htmlentities($id);
+$id = htmlspecialchars($id);
 
 $postFile = 'posts/' . $id . '.html';
 
@@ -55,7 +55,7 @@ else{
 <head>
 	<meta charset='utf-8'>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-	<title><?php echo $siteTitle . ' - ' . htmlentities($id);?></title>
+	<title><?php echo $siteTitle . ' - ' . htmlspecialchars($id);?></title>
 	<link rel="icon" type="image/x-icon" href="favicon.png?v=1">
 	<link rel='stylesheet' href='theme.css'>
 </head>

@@ -14,7 +14,7 @@ function startsWith($haystack, $needle){
  }
 
 function installError($msg){
-	die('The PHP library "' . htmlentities($msg) . '" is not installed or is not enabled.<br>You need the libraries sqlite3, mbstring, and if you want captchas, GD.');
+	die('The PHP library "' . htmlspecialchars($msg) . '" is not installed or is not enabled.<br>You need the libraries sqlite3, mbstring, and if you want captchas, GD.');
 }
 
 if (! extension_loaded('mbstring')) {
@@ -54,7 +54,7 @@ if(! extension_loaded('gd') and $postsBeforeCaptcha > 0){
       $search = $_GET['search'];
       $db = new SQLite3('php/threadList.db');
       $search = $db->escapeString($search);
-      echo '<h2>Search results for "' . htmlentities($search) . '"</h2>';
+      echo '<h2>Search results for "' . htmlspecialchars($search) . '"</h2>';
       $ret = $db->query("SELECT * FROM Threads WHERE Title LIKE '%$search%' or Author LIKE '%search%'");
       if (! $ret->fetchArray(SQLITE3_ASSOC)){
         echo 'Sorry, there were no records found for that.';
@@ -137,7 +137,7 @@ EOF;
 	if (isset($_SESSION['mtPostError'])){
 		if ($_SESSION['mtPostError']){
 			if (isset($_SESSION['mtPostErrorTxt'])){
-				$error = htmlentities($_SESSION['mtPostErrorTxt']);
+				$error = htmlspecialchars($_SESSION['mtPostErrorTxt']);
 			}
 			echo '<div style="color: red; text-align: center; margin-bottom: 1em;">There was an error publishing your post: ' . $error . '</div>';
 			$_SESSION['mtPostError'] = false;

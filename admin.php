@@ -139,7 +139,7 @@ EOF;
     echo '<h2 class="center">Delete a thread</h2>';
     echo '<div class="center">';
     foreach (glob('posts/'. '{,.}*.html', GLOB_BRACE)  as $filename) {
-        echo "<span id=\"$filename\">" . htmlentities(str_replace('.html', '', str_replace('posts/', '', "$filename"))) . " <button onClick=\"deletePost('$filename')\">Delete</button><br><br></span>";
+        echo "<span id=\"$filename\">" . htmlspecialchars(str_replace('.html', '', str_replace('posts/', '', "$filename"))) . " <button onClick=\"deletePost('$filename')\">Delete</button><br><br></span>";
     }
     echo '</div>';
   }

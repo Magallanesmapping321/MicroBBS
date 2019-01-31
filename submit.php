@@ -85,7 +85,7 @@ if (strlen($_POST['text']) > 100000 || strlen($_POST['title'] > 20) || strlen($_
 }
 
 // html encode user data to prevent xss
-$text = htmlentities($text);
+$text = htmlspecialchars($text);
 
 if (stripos($text, 'javascript:') !== false){
 	redirectError('Contains illegal string, javascript link.');
@@ -119,13 +119,13 @@ if ($title == ''){
 	redirectError('Title cannot be blank');
 }
 
-$title = htmlentities(SQLite3::escapeString($title));
+$title = htmlspecialchars(SQLite3::escapeString($title));
 $title = rtrim(ltrim($title));
 
 if (! $allowHidden) {
 	$title = ltrim($title, '.');
 }
-$name = htmlentities($name);
+$name = htmlspecialchars($name);
 
 if (file_exists('posts/' . $title . '.html')){
 	redirectError('A post by that title already exists');

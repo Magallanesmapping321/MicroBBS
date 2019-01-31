@@ -96,8 +96,8 @@ $name = $_POST['name'];
 $tripcode = $_POST['tripcode'];
 
 // html encode user data to prevent xss
-$text = htmlentities($text);
-$name = htmlentities($name);
+$text = htmlspecialchars($text);
+$name = htmlspecialchars($name);
 if (strlen($_POST['text']) > 100000 || strlen($_POST['name'] > 20) || strlen($_POST['tripcode']) > 100) {
 	redirectError('Text, name, or tripcode is too long.');
 }
