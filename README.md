@@ -1,3 +1,5 @@
+# Not supported anymore. I'll only fix security issues.
+
 <h1 align="center"> MicroTXT  🗣️️</h1>
 
 A tiny [textboard style](https://en.wikipedia.org/wiki/Textboard) software written in PHP, no database server required.
