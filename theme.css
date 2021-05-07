@@ -42,7 +42,204 @@ MIT License
   color: red;
 }
 
+.name/*
+MicroTXT - A tiny PHP Textboard Software
+Copyright (c) 2016 Kevin Froman (https://ChaosWebs.net/)
+
+MIT License
+*/
+.center
+{
+	text-align: center;
+}
+
+.logo, .submitPostButton, #postList h3
+{
+	font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif;
+}
+
+.logo a
+{
+	color: black;
+}
+
+.title
+{
+	font-size: 2em;
+	margin-bottom: 1em;
+	margin-top: 2em;
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
+.post, .deletedPost
+{
+	border: 2px solid black;
+	padding: 1em;
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-bottom: 2em;
+	word-wrap: break-word;
+}
+
+.deletedPost{
+  color: red;
+}
+
 .name
+{
+	color: red;
+	margin-bottom: 1em;
+	margin-top: 2em;
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
+#reply
+{
+	margin-bottom: 2em;
+}
+
+.postID, .replyTo
+{
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-bottom: 1em;
+	color: blue;
+	text-decoration: underline;
+
+}
+
+.postID:hover, .replyTo:hover
+{
+	cursor: pointer;
+}
+
+
+.postID:before
+{
+	content: "Post ID: ";
+	text-decoration: none;
+	color: black;
+	display: inline-block;
+	padding-right: 8px;
+	cursor: default;
+}
+
+.replyTo:before
+{
+	content: "Reply To: ";
+	text-decoration: none;
+	color: black;
+	display: inline-block;
+	padding-right: 8px;
+	cursor: default;
+}
+
+#OP:after
+{
+	color: blue;
+	content: " (OP)";
+}
+
+.tripcode
+{
+	color: green;
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-bottom: 1em;
+}
+
+.tripcode:before
+{
+	content: "Tripcode: ";
+}
+
+.postForm
+{
+	text-align: center;
+	margin-bottom: 2em;
+}
+
+#postList
+{
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-bottom: 2em;
+	margin-top: 2em;
+	border: 1px solid black;
+	padding: 1em;
+	overflow-y: scroll;
+	border-radius: 3px;
+}
+
+.submitPostButton
+{
+min-width: 12%;
+background-color: #428bca;
+border: 1px solid black;
+border-radius: 5px;
+color: black;
+font-size: 1.3em;
+height: 12%;
+}
+
+.motd
+{
+	margin-top: 1em;
+	margin-bottom: 2em;
+	margin-left: 20%;
+	margin-right: 20%;
+	padding: 1em;
+	border: 5px solid #36A150;
+	border-radius: 5px;
+}
+img
+{
+  max-height: 500px;
+  max-width: 500px;
+}
+
+@media only screen and (max-device-width : 640px) {
+	.post
+	{
+			margin-left: 5%;
+	margin-right: 5%;
+	}
+	img
+	{
+	  max-height: 250px;
+	  max-width: 250px;
+	}
+}
+
+.tabButton{
+	margin-top: 2em;
+}
+
+.threadLink{
+	margin-top: -10px;
+	margin-right: 2em;
+
+}
+
+.authors{
+	margin-left: 5em;
+}
+
+table, th, td {
+	padding: 10px;
+}
+body {
+ background-image: url("http://bbs.classictoria.com/general/ba.gif");
+ background-color: #cccccc;
+}
+#postList {
+  background-color: #CCFFCC;
+}
+#post {
+  background-color: #EFEFEF;
+}
 {
 	color: red;
 	margin-bottom: 1em;
