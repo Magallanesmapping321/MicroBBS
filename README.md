@@ -1,4 +1,4 @@
-# Not supported anymore. Beardog108 will only fix security issues.
+# A Rewritten version of MicroTXT
 
 <h1 align="center"> MicroBBS  🗣️️</h1>
 
