@@ -11,10 +11,10 @@ $mtVersion = '1.9.4';
 
 /* BEGIN USER SET VARIABLES, MODIFING THIS PART IS SUPPORTED */
 
-$siteTitle = 'MicroTXT Demo';
+$siteTitle = 'MicroBBS Demo';
 $motd = true;
 
-$captcha = true;
+$captcha = false;
 $postsBeforeCaptcha = 3;
 
 $reporting = false;
