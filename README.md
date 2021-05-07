@@ -87,7 +87,7 @@ Well structured & polite bug reports are appreciated. Please try to include the 
 
 ## Contacting
 
-You can find Beardogs contact info at [ChaosWebs.net](https://www.chaoswebs.net/)
+You can find Beardogs contact info at [ChaosWebs.net](https://www.chaoswebs.net/) While mines can be find thru [My twitter](https://twitter.com/bruv97656257)
 
 *I will probably help you if you ask for assistance, but I am not obligated to do so.*
 
