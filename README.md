@@ -17,7 +17,7 @@ It is meant to be simple to host and use.
 
 ## Installing
 
-MicroTXT is only tested in a Linux environment, however, it should work on Windows/Unix with little to no modification.
+MicroBBS is only tested in a Linux environment, however, it should work on Windows/Unix with little to no modification.
 
 Simply download and place the files in your PHP 7.0+ enabled website directory, and edit php/settings.php to your liking. You should probably also change rules.txt and faq.txt too. Make sure PHP has the permissions required to read/write the files.
 
@@ -33,9 +33,10 @@ Just edit php/settings.php
 
 Be careful what you put in settings.php, since it is executable code.
 
-To disable the captcha just change $captcha to false, or to make the captcha appear every time, change $postsBeforeCaptcha to 0.
+To enable the captcha just change $captcha to true, or to make the captcha appear every time, change $postsBeforeCaptcha to 0.
 
-Board appearance: MicroTXT only has 1 CSS file, so if you know CSS you can change the appearance by editing theme.css.
+Board appearance: MicroBBS only has 1 CSS file, so if you know CSS you can change the appearance by editing theme.css.
+
 
 ### Admin Panel
 
@@ -72,7 +73,7 @@ Well structured & polite bug reports are appreciated. Please try to include the 
 * PHP version
 * Web server version
 * Operating system version
-* MicroTXT Version (specified in settings.php)
+* MicroBBS/MicroTXT Version (specified in settings.php)
 * What you have tried so far
 * Screenshots are helpful, but not necessarily required.
 
