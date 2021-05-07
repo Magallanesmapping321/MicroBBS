@@ -1,8 +1,8 @@
 # Not supported anymore. Beardog108 will only fix security issues.
 
-<h1 align="center"> MicroTXT  🗣️️</h1>
+<h1 align="center"> MicroBBS  🗣️️</h1>
 
-A tiny [textboard style](https://en.wikipedia.org/wiki/Textboard) software written in PHP, no database server required.
+A fork of a tiny [textboard style](https://en.wikipedia.org/wiki/Textboard) software written in PHP, no database server required.
 
 It is meant to be simple to host and use.
 
@@ -57,9 +57,7 @@ Tripcodes are 'secure enough' if you set a good salt and good passwords are used
 
 ## Demo
 
-Demo board no longer supported
-
-[Original link of the demo board](https://www.chaoswebs.net/mt/).
+Demo board can be viewed [here](http://microtxt.classictoria.com/).
 
 ## Contributing
 
@@ -100,3 +98,5 @@ A dollar or two would be appreciated. If you give me money, I will be more likel
 Bitcoin: 1Hek4bVGsxSFA1QpTXryMZcP88agGMKfAU
 Paypal: kevinfroman12@gmail.com
 Ko-Fi: https://www.ko-fi.com/beardogkf
+
+
