@@ -1,4 +1,4 @@
-# Not supported anymore. I'll only fix security issues.
+# Not supported anymore. Beardog108 will only fix security issues.
 
 <h1 align="center"> MicroTXT  🗣️️</h1>
 
