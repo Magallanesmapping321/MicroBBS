@@ -1,5 +1,5 @@
 <?php
 $moderators = false;
 $admins = false;
-$adminPW = 'secureandrandompassword5';
+$adminPW = 'peispeisisswag1234567890';
 ?>
