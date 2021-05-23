@@ -17,7 +17,7 @@ It is meant to be simple to host and use.
 
 ## Installing
 
-MicroBBS is only tested in a Linux environment, however, it should work on Windows/Unix with little to no modification.
+MicroBBS is only tested in a Windows, however, it should work on Linux/Unix with little to no modification.
 
 Simply download and place the files in your PHP 7.0+ enabled website directory, and edit php/settings.php to your liking. You should probably also change rules.txt and faq.txt too. Make sure PHP has the permissions required to read/write the files.
 
