@@ -60,7 +60,7 @@ else{
 	<link rel='stylesheet' href='theme.css'>
 </head>
 <body>
-	<h1 class='center logo'><a href='index.php'><?php echo $siteTitle; ?></a></h1>
+	<h1 class='center logo'><img src="banner.jpg" width=300 height=100><br><a href='index.php'><?php echo $siteTitle; ?></a></h1>
 	<?php
   if ($mod){
     echo '<h2>Delete Reply</h2><form method="post" action="deleter.php"><input type="hidden" name="CSRF" value=' . $CSRF . '><input name="replyID" type="text" placeholder="reply id"><input type="hidden" name="thread" value="' . $id . '"><br><br><br><input type="submit" value="Delete Reply"></form>';
