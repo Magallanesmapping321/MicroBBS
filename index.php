@@ -40,7 +40,7 @@ if(! extension_loaded('gd') and $postsBeforeCaptcha > 0){
 	<link rel='stylesheet' href='theme.css'>
 </head>
 <body>
-	<h1 class='center logo'><?php echo $siteTitle;?></h1>
+	<h1 class='center logo'><img src="banner.jpg" width=300 height=100><br><?php echo $siteTitle;?></h1>
   <div class='center'>
     <form method='get'>
       <label>Search for a thread: <input type='text' name='search' required placeholder='by author or title'> </label>
