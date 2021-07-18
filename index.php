@@ -38,6 +38,8 @@ if(! extension_loaded('gd') and $postsBeforeCaptcha > 0){
 	<title><?php echo $siteTitle; ?></title>
 	<link rel="icon" type="image/x-icon" href="favicon.png?v=1">
 	<link rel='stylesheet' href='theme.css'>
+	<!--- enable this if you want to disable your board --->
+		<!--- <meta http-equiv="refresh" content="0;url=offline.php"> --->
 </head>
 <body>
 	<h1 class='center logo'><img src="banner.jpg" width=300 height=100><br><?php echo $siteTitle;?></h1>
